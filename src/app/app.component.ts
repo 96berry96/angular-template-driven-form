@@ -22,6 +22,7 @@ export class AppComponent {
   city: string = '';
   region: string = '';
   postal: string = '';
+  IsAgreed: boolean = false;
 
   genders= [
     { id:'check-male', value:'male', display: 'Male'},
@@ -30,8 +31,6 @@ export class AppComponent {
   ]
 
   OnFormSubmitted(){
-    console.log(this.form);
-    
     this.firstName = this.form.value.firstname;
     this.lastName = this.form.value.lastname;
     this.userName = this.form.value.username;
